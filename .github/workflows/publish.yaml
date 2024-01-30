@@ -6,9 +6,19 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.4.0
+
+      - name: Build
+        run: pnpm run build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
