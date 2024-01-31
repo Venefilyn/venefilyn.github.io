@@ -5,12 +5,14 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
+  rel?: string;
 }
 
-const { href, className, ariaLabel, title, disabled = false } = Astro.props;
+const { href, className, ariaLabel, title, rel, disabled = false } = Astro.props;
 ---
 
 <a
+  rel={rel ? rel : ""}
   href={disabled ? "#" : href}
   tabindex={disabled ? "-1" : "0"}
   class={`group inline-block ${className}`}
