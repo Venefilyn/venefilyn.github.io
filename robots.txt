@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://spytec.se/sitemap-index.xml
+Sitemap: https://venefilyn.se/sitemap-index.xml
