@@ -1,19 +1,17 @@
 {
-  "arrowParens": "avoid",
-  "semi": true,
+  "printWidth": 110,
   "tabWidth": 2,
-  "printWidth": 80,
-  "singleQuote": false,
-  "jsxSingleQuote": false,
-  "trailingComma": "es5",
-  "bracketSpacing": true,
-  "endOfLine": "lf",
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "singleQuote": true,
+  "bracketSpacing": false,
+  "quoteProps": "consistent",
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "plugins": ["prettier-plugin-jinja-template"],
   "overrides": [
     {
-      "files": "*.astro",
+      "files": "*.njk",
       "options": {
-        "parser": "astro"
+        "parser": "jinja-template"
       }
     }
   ]
