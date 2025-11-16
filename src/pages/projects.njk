@@ -1,0 +1,29 @@
+---
+layout: base
+title: Projects
+description: What I'm currently working on
+permalink: 'projects/index.html'
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-secondary)">
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+      <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
+    </div>
+
+    {% svg "divider/edgy", null, "divider" %}
+  </header>
+
+  <custom-masonry layout="thirds">
+    {% set itemList = collections.allProjects %}
+    {% asyncEach item in itemList.slice(0, 4) %}
+    {% set headingLevel = "h3" %}
+    {% include "partials/card-project.njk" %}
+    {% include "partials/card-project.njk" %}
+    {% include "partials/card-project.njk" %}
+    {% include "partials/card-project.njk" %}
+    {% include "partials/card-project.njk" %}
+    {% include "partials/card-project.njk" %}
+    {% endeach %}
+  </custom-masonry>
+</div>
