@@ -1,0 +1,7 @@
+<custom-note class="side-note right-note" webc:root>
+  <div class="side-wrapper">
+    <slot name="image"></slot>
+    <slot name="content"></slot>
+    <slot name="footer"></slot>
+  </div>
+</custom-note>

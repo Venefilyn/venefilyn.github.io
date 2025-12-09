@@ -5,7 +5,7 @@
   --full: minmax(var(--gap), 1fr);
   --content: min(var(--wrapper-width, 85rem), 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
-  --feature: minmax(0, 5rem);
+  --feature: minmax(0, 18rem);
 
   display: grid;
   grid-template-columns:
@@ -20,6 +20,26 @@
 
 .wrapper > * {
   grid-column: content;
+}
+
+.side-note .side-wrapper {
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+@media screen(max) {
+  .wrapper > .side-note {
+    height: 0;
+  }
+
+  .wrapper > .left-note {
+    grid-column: feature-start;
+  }
+
+  .wrapper > .right-note {
+    grid-column: popout-end;
+  }
 }
 
 .prose-wrapper {
