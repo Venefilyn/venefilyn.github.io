@@ -58,7 +58,7 @@ blockquote > * + * {
   margin-block-start: var(--space-m-l);
 }
 
-blockquote :last-child {
+blockquote > :last-child {
   font-family: var(--font-base);
   font-style: normal;
   font-size: var(--size-step-1);
