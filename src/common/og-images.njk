@@ -1,9 +1,9 @@
 ---
 fontDisplay: "'Red Hat Display', Ubuntu" # needed created in local development, font must be installed on your system.
 fontBody: "'Atkinson Hyperlegible', Ubuntu" # needed created in local development, font must be installed on your system.
-background: '#FBBE25'
+background: '#a0e1a7'
 text: '#161616'
-siteUrl: 'eleventy-excellent.netlify.app'
+siteUrl: 'venefilyn.se'
 pagination:
   data: collections.allPosts
   size: 1
@@ -49,7 +49,7 @@ eleventyExcludeFromCollections: true
     letter-spacing="-1"
   >
     <tspan x="160" y="{{ verticalStartingPoint - 120 }}">
-      {{ post.date | formatDate('DD / MM / YYYY') }}
+      {{ post.date | formatDate('YYYY-MM-DD') }}
     </tspan>
   </text>
 
