@@ -138,6 +138,12 @@ Google Chrome::
   `+google-chrome --auth-server-whitelist=*example.com+`
 ```
 
+<custom-note>
+  <div slot="content">
+    There should've been a space followed by a plus for the hard-breaks on the empty lines. For this use-case the output is the same though!
+  </div>
+</custom-note>
+
 At first glance this looks strange but should probably work? Rendering it though shows something else..
 
 <img src="./asciidoctor-description-list-p-default.png" alt="Description list generated with AsciiDoctor.">
